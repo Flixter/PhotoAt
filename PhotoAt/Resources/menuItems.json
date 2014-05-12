@@ -1,0 +1,6 @@
+[
+{ "title":"Home" ,     "imageNameSelected":"img_home_on",       "imageName":"img_home_off"},
+{ "title":"Profile" ,  "imageNameSelected":"img_profile_on",       "imageName": "img_profile_off" },
+{ "title":"Settings" , "imageNameSelected":"img_settings_on",       "imageName": "img_settings_off"},
+{ "title":"Check In" , "imageNameSelected":"img_checkIn_on" ,      "imageName": "img_checkIn_off"}
+]
