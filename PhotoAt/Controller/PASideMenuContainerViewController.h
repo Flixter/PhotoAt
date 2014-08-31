@@ -10,5 +10,4 @@
 
 @interface PASideMenuContainerViewController : UIViewController
 < UITableViewDataSource, UITableViewDelegate >
-
 @end

@@ -30,4 +30,5 @@
 - (void)getUserInfo;
 - (NSString *)getAccessToken;
 - (int)getAge;
+
 @end

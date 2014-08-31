@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "PABaseViewController.h"
-
+#import "PAMapViewViewController.h"
 
 @interface PAProfileViewController : PABaseViewController
+<
+UITableViewDataSource,
+UITableViewDelegate
+>
 
 @property (nonatomic, retain) UIImageView* profileView;
 @property (nonatomic, retain) UIImageView* profilePicImageView;
@@ -20,7 +24,8 @@
 @property (nonatomic, retain) UILabel* userCountriesVisited;
 @property (nonatomic, retain) UILabel* userCitiesVisited;
 @property (nonatomic, retain) UILabel* userPlacesVisited;
-
+@property (nonatomic, retain) UITableView* tableView;
+@property (nonatomic,strong)NSArray* fetchedRecordsArray;
 
 
 @end

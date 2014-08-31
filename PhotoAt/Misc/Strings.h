@@ -8,6 +8,6 @@
 
 #define homeScreenTitle              NSLocalizedString(@"Home", @"")
 #define profileScreenTitle           NSLocalizedString(@"Profile",@"")
-#define settingsScreenTitle          NSLocalizedString(@"Settings",@"")
+#define settingsScreenTitle          NSLocalizedString(@"Compass",@"")
 #define checkInScreenTitle           NSLocalizedString(@"Check In",@"")
 #define connectWithFB                NSLocalizedString(@"Login with Facebook","")

@@ -29,6 +29,10 @@
 		770D365B191E2DCF0000B949 /* PASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D365A191E2DCF0000B949 /* PASettingsViewController.m */; };
 		770D365E191E2DE10000B949 /* PACheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D365D191E2DE10000B949 /* PACheckInViewController.m */; };
 		770D3662191E30860000B949 /* PAMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D3661191E30860000B949 /* PAMenuHeaderView.m */; };
+		775AB6D519994322002BC1DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775AB6D419994322002BC1DD /* QuartzCore.framework */; };
+		775AB6D71999432B002BC1DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775AB6D61999432B002BC1DD /* CoreLocation.framework */; };
+		77972D5E19993875005E43A0 /* PAProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77972D5D19993875005E43A0 /* PAProfileCell.m */; };
+		77972D61199939CD005E43A0 /* PAMapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77972D60199939CD005E43A0 /* PAMapViewViewController.m */; };
 		77D3658D191EC300006B07F3 /* PAMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D3658C191EC300006B07F3 /* PAMenuItem.m */; };
 		77D36591191EC4C5006B07F3 /* avenir_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77D3658F191EC4C5006B07F3 /* avenir_medium.ttf */; };
 		77D36592191EC4C5006B07F3 /* menuItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D36590191EC4C5006B07F3 /* menuItems.json */; };
@@ -36,6 +40,13 @@
 		77D36599191EDD7D006B07F3 /* PALogInViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D36598191EDD7D006B07F3 /* PALogInViewViewController.m */; };
 		77D3659D191EE1FB006B07F3 /* PAFacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D3659C191EE1FB006B07F3 /* PAFacebookManager.m */; };
 		77D365A2191EF1AC006B07F3 /* PAServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D365A1191EF1AC006B07F3 /* PAServiceProvider.m */; };
+		77D7458E1998186300F4A488 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D7458D1998186300F4A488 /* MapKit.framework */; };
+		77D7459119983C8A00F4A488 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77D7458F19983C8A00F4A488 /* Model.xcdatamodeld */; };
+		77D941FC1997860B005FB909 /* CustomRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D941FB1997860B005FB909 /* CustomRatingView.m */; };
+		77D941FF1997886E005FB909 /* PAParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D941FE1997886E005FB909 /* PAParseManager.m */; };
+		77D9420219979F02005FB909 /* PAPlaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D9420119979F02005FB909 /* PAPlaceCell.m */; };
+		77D942061997B93E005FB909 /* PASinglePlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D942051997B93E005FB909 /* PASinglePlaceViewController.m */; };
+		77E147A319B24B41001F8680 /* SavedCheckIns.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E147A219B24B41001F8680 /* SavedCheckIns.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +97,12 @@
 		770D365D191E2DE10000B949 /* PACheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACheckInViewController.m; sourceTree = "<group>"; };
 		770D3660191E30860000B949 /* PAMenuHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuHeaderView.h; sourceTree = "<group>"; };
 		770D3661191E30860000B949 /* PAMenuHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuHeaderView.m; sourceTree = "<group>"; };
+		775AB6D419994322002BC1DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		775AB6D61999432B002BC1DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		77972D5C19993875005E43A0 /* PAProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAProfileCell.h; sourceTree = "<group>"; };
+		77972D5D19993875005E43A0 /* PAProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAProfileCell.m; sourceTree = "<group>"; };
+		77972D5F199939CD005E43A0 /* PAMapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMapViewViewController.h; sourceTree = "<group>"; };
+		77972D60199939CD005E43A0 /* PAMapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMapViewViewController.m; sourceTree = "<group>"; };
 		77D36587191EBFB9006B07F3 /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
 		77D3658B191EC300006B07F3 /* PAMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMenuItem.h; sourceTree = "<group>"; };
 		77D3658C191EC300006B07F3 /* PAMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuItem.m; sourceTree = "<group>"; };
@@ -95,10 +112,22 @@
 		77D36595191EC58F006B07F3 /* PAMenuItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMenuItemTableViewCell.m; sourceTree = "<group>"; };
 		77D36597191EDD7D006B07F3 /* PALogInViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALogInViewViewController.h; sourceTree = "<group>"; };
 		77D36598191EDD7D006B07F3 /* PALogInViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PALogInViewViewController.m; sourceTree = "<group>"; };
-		77D3659B191EE1FB006B07F3 /* PAFacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFacebookManager.h; sourceTree = "<group>"; };
-		77D3659C191EE1FB006B07F3 /* PAFacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFacebookManager.m; sourceTree = "<group>"; };
+		77D3659B191EE1FB006B07F3 /* PAFacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAFacebookManager.h; path = ../Model/PAFacebookManager.h; sourceTree = "<group>"; };
+		77D3659C191EE1FB006B07F3 /* PAFacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAFacebookManager.m; path = ../Model/PAFacebookManager.m; sourceTree = "<group>"; };
 		77D365A0191EF1AC006B07F3 /* PAServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAServiceProvider.h; sourceTree = "<group>"; };
 		77D365A1191EF1AC006B07F3 /* PAServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAServiceProvider.m; sourceTree = "<group>"; };
+		77D7458D1998186300F4A488 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77D7459019983C8A00F4A488 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		77D745921998468300F4A488 /* SavedCheckIns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedCheckIns.h; sourceTree = "<group>"; };
+		77D941FA1997860B005FB909 /* CustomRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRatingView.h; sourceTree = "<group>"; };
+		77D941FB1997860B005FB909 /* CustomRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRatingView.m; sourceTree = "<group>"; };
+		77D941FD1997886E005FB909 /* PAParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAParseManager.h; sourceTree = "<group>"; };
+		77D941FE1997886E005FB909 /* PAParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAParseManager.m; sourceTree = "<group>"; };
+		77D9420019979F02005FB909 /* PAPlaceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPlaceCell.h; sourceTree = "<group>"; };
+		77D9420119979F02005FB909 /* PAPlaceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPlaceCell.m; sourceTree = "<group>"; };
+		77D942041997B93E005FB909 /* PASinglePlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASinglePlaceViewController.h; sourceTree = "<group>"; };
+		77D942051997B93E005FB909 /* PASinglePlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASinglePlaceViewController.m; sourceTree = "<group>"; };
+		77E147A219B24B41001F8680 /* SavedCheckIns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedCheckIns.m; sourceTree = "<group>"; };
 		DC3B43AF649C4FD88497A931 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +136,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775AB6D71999432B002BC1DD /* CoreLocation.framework in Frameworks */,
+				775AB6D519994322002BC1DD /* QuartzCore.framework in Frameworks */,
 				770D360D191E27D10000B949 /* CoreGraphics.framework in Frameworks */,
 				770D360F191E27D10000B949 /* UIKit.framework in Frameworks */,
+				77D7458E1998186300F4A488 /* MapKit.framework in Frameworks */,
 				770D360B191E27D10000B949 /* Foundation.framework in Frameworks */,
 				4A312B416C764D5AAB0DD5C3 /* libPods.a in Frameworks */,
 			);
@@ -130,6 +162,9 @@
 		770D35FE191E27D10000B949 = {
 			isa = PBXGroup;
 			children = (
+				77D7458F19983C8A00F4A488 /* Model.xcdatamodeld */,
+				77E147A219B24B41001F8680 /* SavedCheckIns.m */,
+				77D745921998468300F4A488 /* SavedCheckIns.h */,
 				770D3610191E27D10000B949 /* PhotoAt */,
 				770D3629191E27D10000B949 /* PhotoAtTests */,
 				770D3609191E27D10000B949 /* Frameworks */,
@@ -150,6 +185,9 @@
 		770D3609191E27D10000B949 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				775AB6D61999432B002BC1DD /* CoreLocation.framework */,
+				775AB6D419994322002BC1DD /* QuartzCore.framework */,
+				77D7458D1998186300F4A488 /* MapKit.framework */,
 				770D360A191E27D10000B949 /* Foundation.framework */,
 				770D360C191E27D10000B949 /* CoreGraphics.framework */,
 				770D360E191E27D10000B949 /* UIKit.framework */,
@@ -162,7 +200,6 @@
 		770D3610191E27D10000B949 /* PhotoAt */ = {
 			isa = PBXGroup;
 			children = (
-				770D363A191E28860000B949 /* Categories */,
 				770D363B191E28860000B949 /* Controller */,
 				770D363C191E28860000B949 /* Misc */,
 				770D363D191E28860000B949 /* Model */,
@@ -206,13 +243,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		770D363A191E28860000B949 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
 		770D363B191E28860000B949 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,11 +257,15 @@
 				770D3656191E2CB90000B949 /* PAProfileViewController.h */,
 				770D3657191E2CB90000B949 /* PAProfileViewController.m */,
 				770D3659191E2DCF0000B949 /* PASettingsViewController.h */,
-				770D365A191E2DCF0000B949 /* PASettingsViewController.m */,
 				770D365C191E2DE10000B949 /* PACheckInViewController.h */,
+				770D365A191E2DCF0000B949 /* PASettingsViewController.m */,
 				770D365D191E2DE10000B949 /* PACheckInViewController.m */,
 				77D36597191EDD7D006B07F3 /* PALogInViewViewController.h */,
 				77D36598191EDD7D006B07F3 /* PALogInViewViewController.m */,
+				77D942041997B93E005FB909 /* PASinglePlaceViewController.h */,
+				77D942051997B93E005FB909 /* PASinglePlaceViewController.m */,
+				77972D5F199939CD005E43A0 /* PAMapViewViewController.h */,
+				77972D60199939CD005E43A0 /* PAMapViewViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,11 +273,15 @@
 		770D363C191E28860000B949 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				77D3659B191EE1FB006B07F3 /* PAFacebookManager.h */,
+				77D3659C191EE1FB006B07F3 /* PAFacebookManager.m */,
 				770D3644191E292D0000B949 /* Util.h */,
 				770D3645191E292D0000B949 /* Util.m */,
 				770D3647191E29C00000B949 /* Config.h */,
 				770D364D191E2AFB0000B949 /* Constants.h */,
 				77D36587191EBFB9006B07F3 /* Strings.h */,
+				77D941FD1997886E005FB909 /* PAParseManager.h */,
+				77D941FE1997886E005FB909 /* PAParseManager.m */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -253,8 +291,6 @@
 			children = (
 				77D3658B191EC300006B07F3 /* PAMenuItem.h */,
 				77D3658C191EC300006B07F3 /* PAMenuItem.m */,
-				77D3659B191EE1FB006B07F3 /* PAFacebookManager.h */,
-				77D3659C191EE1FB006B07F3 /* PAFacebookManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +307,8 @@
 		770D363F191E28860000B949 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77D941FA1997860B005FB909 /* CustomRatingView.h */,
+				77D941FB1997860B005FB909 /* CustomRatingView.m */,
 				770D365F191E306B0000B949 /* HeaderView */,
 				770D3640191E28860000B949 /* Cell */,
 			);
@@ -282,6 +320,10 @@
 			children = (
 				77D36594191EC58F006B07F3 /* PAMenuItemTableViewCell.h */,
 				77D36595191EC58F006B07F3 /* PAMenuItemTableViewCell.m */,
+				77D9420019979F02005FB909 /* PAPlaceCell.h */,
+				77D9420119979F02005FB909 /* PAPlaceCell.m */,
+				77972D5C19993875005E43A0 /* PAProfileCell.h */,
+				77972D5D19993875005E43A0 /* PAProfileCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -354,6 +396,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Viktor;
 				TargetAttributes = {
+					770D3606191E27D10000B949 = {
+						DevelopmentTeam = 78SLAU59XT;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					770D3621191E27D10000B949 = {
 						TestTargetID = 770D3606191E27D10000B949;
 					};
@@ -438,18 +488,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D36596191EC58F006B07F3 /* PAMenuItemTableViewCell.m in Sources */,
+				77D941FC1997860B005FB909 /* CustomRatingView.m in Sources */,
 				770D3617191E27D10000B949 /* main.m in Sources */,
+				77D9420219979F02005FB909 /* PAPlaceCell.m in Sources */,
 				770D3643191E28C80000B949 /* PABaseNavigationViewController.m in Sources */,
+				77972D61199939CD005E43A0 /* PAMapViewViewController.m in Sources */,
 				770D365B191E2DCF0000B949 /* PASettingsViewController.m in Sources */,
 				77D3659D191EE1FB006B07F3 /* PAFacebookManager.m in Sources */,
 				770D364C191E2A4D0000B949 /* PABaseViewController.m in Sources */,
 				77D3658D191EC300006B07F3 /* PAMenuItem.m in Sources */,
 				77D36599191EDD7D006B07F3 /* PALogInViewViewController.m in Sources */,
 				770D361B191E27D10000B949 /* PAAppDelegate.m in Sources */,
+				77972D5E19993875005E43A0 /* PAProfileCell.m in Sources */,
+				77E147A319B24B41001F8680 /* SavedCheckIns.m in Sources */,
+				77D942061997B93E005FB909 /* PASinglePlaceViewController.m in Sources */,
+				77D941FF1997886E005FB909 /* PAParseManager.m in Sources */,
 				770D3646191E292D0000B949 /* Util.m in Sources */,
 				770D3658191E2CB90000B949 /* PAProfileViewController.m in Sources */,
 				77D365A2191EF1AC006B07F3 /* PAServiceProvider.m in Sources */,
 				770D365E191E2DE10000B949 /* PACheckInViewController.m in Sources */,
+				77D7459119983C8A00F4A488 /* Model.xcdatamodeld in Sources */,
 				770D3652191E2BB80000B949 /* PASideMenuContainerViewController.m in Sources */,
 				770D3662191E30860000B949 /* PAMenuHeaderView.m in Sources */,
 				770D3655191E2C580000B949 /* PAHomeViewController.m in Sources */,
@@ -574,11 +632,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoAt/PhotoAt-Prefix.pch";
 				INFOPLIST_FILE = "PhotoAt/PhotoAt-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -589,11 +649,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoAt/PhotoAt-Prefix.pch";
 				INFOPLIST_FILE = "PhotoAt/PhotoAt-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -671,6 +733,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77D7458F19983C8A00F4A488 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77D7459019983C8A00F4A488 /* Model.xcdatamodel */,
+			);
+			currentVersion = 77D7459019983C8A00F4A488 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 770D35FF191E27D10000B949 /* Project object */;
 }

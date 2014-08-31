@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>17FC962B-FF66-4FEE-8B25-398361A60596</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotoAt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>609A7990-0D50-4058-B9A0-F62C209D5BE6</key>
+		<string>https://github.com/Flixter/PhotoAt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotoAt.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>609A7990-0D50-4058-B9A0-F62C209D5BE6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Flixter/PhotoAt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>609A7990-0D50-4058-B9A0-F62C209D5BE6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>609A7990-0D50-4058-B9A0-F62C209D5BE6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotoAt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

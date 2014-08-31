@@ -1,0 +1,33 @@
+Тема на апликацијата: Туризам, Патувања
+
+Минимални побарувања:
+1. УИ контрола по сопствен дизајн. 
+Vo view folderot CustomRatingView klasta.
+
+2. Анимација на УИ по сопствен дизајн.DA
+Vo view folderol CustomRatingView isto dzvezdickite se animiraat koga se menuva ratingot shto sakame da go komenitrame.
+
+3. Да користи на локациски сервиси + мапи. 
+Vo Controller folderot klasata PASinglePlaceViewController vo initWithPlace metodata
+
+4. Да користи веб сервис. 
+Kako feb servos go koristime Parse site metodi povrzani so veb servisot se naogjaat vo klasata PAParseManager
+
+5. Да користи дополнителни 2 сензори по желба (различни од ГПС). 
+Eden senzor se koristi vo klasta PASettingsViewController.h accelerometar i so negova pomosh e napraven kompas
+a vtoriot senzor e kamera i go koristime vo PACheckInViewController vo useCamera metodot
+
+6. Да има интеграција со најмалку една социјална мрежа.
+Integrirana e FB socijalnata mrezha site metodi povrzani so ova se vo PAFacebookManager klasata
+
+7. Да користи внатрешен storage. 
+Vnatreshen storage koristime za savuvanje na omileni lokacii Model klasata e SavedCheckins a go koristime vo PAProfileViewController
+
+8. Да искористи multithreading за барем една операција.
+Da koristime multithreading za downlodiranje na profile slikite od FB za ovaa cel ja koristime AFNetworking bibliotekata. Iskoristena e na povekje mesta.
+Mozhe da najdeme vo PAProfileViewController 
+
+- (void)loadCoverPicThumblWithURL:(NSString *)url metodot
+
+9. Да користи нотификациски сервиси.
+Vo PAAppDelegate - (void)setLocalNotifications metodata

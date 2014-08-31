@@ -22,6 +22,8 @@ PODS:
   - GoogleAnalytics-iOS-SDK (3.0.7)
   - MagicalRecord/Shorthand (2.2)
   - Masonry (0.4.0)
+  - Parse-iOS-SDK (1.2.19):
+    - Facebook-iOS-SDK (~> 3.7)
   - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
@@ -30,14 +32,16 @@ DEPENDENCIES:
   - GoogleAnalytics-iOS-SDK
   - MagicalRecord/Shorthand
   - Masonry
+  - Parse-iOS-SDK
   - SVPullToRefresh
 
 SPEC CHECKSUMS:
-  AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
-  Facebook-iOS-SDK: 1f753fe932c2602359114a662cd9abdc2dba48f3
-  GoogleAnalytics-iOS-SDK: 594702aaf93e6ee497140fd31e758c2e2fa44315
-  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
-  Masonry: d673617c9cbc24aaea90fba20b10e47fd9970a39
-  SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
+  AFNetworking: 47947303319594706f48a55185ea95a95159ab94
+  Facebook-iOS-SDK: 18b8523e37d335e8bc6a690adce2fd5cb577c201
+  GoogleAnalytics-iOS-SDK: bb285d8eef15a682f1b82971becd0d22edd0e53b
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  Masonry: 392466f4090cb28cc5349adec067453463e2ecd9
+  Parse-iOS-SDK: 5e1f7e649a02f1cc19e73cc95bd43d7778848314
+  SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1

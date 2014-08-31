@@ -63,7 +63,7 @@
 
 - (void)sucessfulllLogIn{
     PASideMenuContainerViewController* sideMenuViewController = [[PASideMenuContainerViewController alloc] init];
-    UINavigationController* navigaionController = [[UINavigationController alloc]initWithRootViewController:sideMenuViewController];
+    PABaseNavigationViewController* navigaionController = [[PABaseNavigationViewController alloc]initWithRootViewController:sideMenuViewController];
     [self presentViewController:navigaionController animated:YES completion:nil];
 }
 @end

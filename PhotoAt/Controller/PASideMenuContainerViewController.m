@@ -65,11 +65,11 @@
         self.currentSelectIndex = -1;
         self.isMenuVisible = NO;
         self.statusBarHidden = NO;
-        
         //Assign the notifications
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectedOnMenu) name:ControllerDidPressedMenuNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTableHeaderView) name:UserFacebookInfoUpdate object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkinUploaded) name:CheckinUploadedNotification object:nil];
         
-           [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTableHeaderView) name:UserFacebookInfoUpdate object:nil];
     }
     return self;
 }
@@ -79,6 +79,7 @@
     //Dealoc the notification for avoiding issues
     [[NSNotificationCenter defaultCenter] removeObserver:self name:ControllerDidPressedMenuNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UserFacebookInfoUpdate object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:CheckinUploadedNotification object:nil];
 }
 
 - (void)loadView{
@@ -161,6 +162,10 @@
     [self initMenuItems];
     
     //Load the default view controller
+    [self showControllerAtIndex:0];
+}
+- (void)checkinUploaded
+{
     [self showControllerAtIndex:0];
 }
 
@@ -332,7 +337,7 @@
 }
 
 
-- (void)showControllerAtIndex:(NSUInteger)index
+- (void)showControllerAtIndex:(NSInteger)index
 {
     //Don't load the same controller if it is already visible
     if (index != self.currentSelectIndex) {

@@ -7,12 +7,18 @@
 //
 
 #import "PAProfileViewController.h"
+#import "PAAppDelegate.h"
+#import "SavedCheckIns.h"
+
+
 
 @interface PAProfileViewController ()
 
 @end
 
 @implementation PAProfileViewController
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +40,8 @@
     [self setupViews];
     [self setupConstraints];
     [[PAFacebookManager facebookManager]getUserInfo];
+    PAAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    self.fetchedRecordsArray = [appDelegate getAllSavedPlaces];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +72,28 @@
     self.userStatsView.backgroundColor = [UIColor whiteColor];
     self.userStatsView.alpha = 0.7;
     [self.view addSubview:self.userStatsView];
+    
+    self.tableView = [UITableView new];
+    
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.profilePicImageView.mas_bottom);
+        make.width.equalTo(self.view.mas_width);
+        make.height.equalTo(self.view.mas_height);
+        make.centerX.equalTo(self.view.mas_centerX);
+    }];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+
+    UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh)];
+    self.navigationItem.rightBarButtonItem = button;
+}
+
+- (void)refresh
+{
+    PAAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    self.fetchedRecordsArray = [appDelegate getAllSavedPlaces];
+    [self.tableView reloadData];
 }
 
 - (void)setupConstraints{
@@ -132,5 +162,43 @@
     }];
     
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 53.0f;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.fetchedRecordsArray count];
+}
+
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* CellIdentifier = @"Cell";
+    
+    UITableViewCell* cell = [[UITableViewCell alloc]init];
+    if (cell == nil)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+
+    SavedCheckIns * obj = [self.fetchedRecordsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ \n %@ star rating",obj.placeName,obj.placeRating];
+    cell.textLabel.numberOfLines = 2;
+    [cell.textLabel sizeToFit];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SavedCheckIns * obj = [self.fetchedRecordsArray objectAtIndex:indexPath.row];
+    
+    PAMapViewViewController* mapPlaceVC = [[PAMapViewViewController alloc] initWithPlace:obj];
+    UINavigationController* navCOntroller = [[UINavigationController alloc] initWithRootViewController:mapPlaceVC];
+    [self.navigationController presentViewController:navCOntroller animated:YES completion:nil];
+    // implement table itme on click listener!
+}
+
 
 @end

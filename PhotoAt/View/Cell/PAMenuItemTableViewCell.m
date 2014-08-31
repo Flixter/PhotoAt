@@ -32,7 +32,7 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
     self.menuIconImageView = [[UIImageView alloc] init];
-    self.menuIconImageView.contentMode = UIViewContentModeScaleToFill;
+    self.menuIconImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:self.menuIconImageView];
     
     self.menuTitleLabel = [[UILabel alloc] init];
